@@ -1,0 +1,34 @@
+TABELLA AUTO USATE
+
+id: BIGINT - NOT NULL, UNIQUE, AUTO INCREMENT - PRIMARY KEY
+marca: VARCHAR(50) - NOT NULL - INDEX
+modello: VARCHAR(50) - NOT NULL - INDEX
+anno_fabbrica: YEAR - NOT NULL
+motore: VARCHAR(50) - NOT NULL
+emissioni: VARCHAR(20) - NOT NULL
+potenza_cavalli: SMALLINT - NOT NULL
+potenza_kw: SMALLINT - NOT NULL
+chilometri_percorsi: MEDIUMINT - (DEFAULT(0))
+carburante: VARCHAR(20) - NOT NULL - INDEX
+litri/100km: FLOAT(3,2) - NOT NULL
+cambio_manuale: BOOL - DEFAULT(1)
+porte: TINYINT(5) - NOT NULL
+sedili: TINYINT(5) - NOT NULL - INDEX
+cilindrata: SMALLINT - NOT NULL
+proprietari: SMALLINT - DEFAULT(0)
+prima_immatricolazione: DATE - NOT NULL
+verniciatura: VARCHAR(30) - NULL
+prezzo: MEDIUMINT - NOT NULL - INDEX
+riparazioni: SMALLINT - DEFAULT(0)
+ultima_riparazione: YEAR - NULL
+targa: CHAR(7) - NOT NULL, UNIQUE
+accessori: VARCHAR(250) - NULL
+sicurezza: VARCHAR(250) - NOT NULL
+provenienza: VARCHAR(100) - NOT NULL
+condizioni: CHAR(1) - DEFAULT(S)
+disponibilità: BOOL - NOT NULL
+
+
+
+
+
